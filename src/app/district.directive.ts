@@ -17,9 +17,9 @@ export class DistrictDirective implements Validator {
     return validDistricts.includes(control.value) ? null : {nosuchdistrict: true};
   }
 
-  registerOnValidatorChange?(fn: () => void): void {
-    throw new Error("Method not implemented.");
-  }
+  // registerOnValidatorChange?(fn: () => void): void {
+  //   throw new Error("Method not implemented.");
+  // }
 
   constructor() { }
 

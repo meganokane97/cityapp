@@ -1,4 +1,4 @@
-<input [(ngModel)]="filterText" placeholder="Filter">
+<input id="filterInput" [(ngModel)]="filterText" placeholder="Filter">
 <h2>Cities</h2>
 <ul>
     <li *ngFor="let city of data.cities | nameFilter:filterText" (click)="onSelect(city)">{{city.name}}</li>
